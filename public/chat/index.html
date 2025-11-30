@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Exemple de section FAQ (place la vraie FAQ quelque part sur la page) -->
+  <section id="site-faq" style="display:none;">
+    <div class="faq-item" data-id="faq1" data-en-question="How do I change my booking?"
+      data-fr-question="Comment modifier ma réservation ?"
+      data-en-answer="To change your booking, go to My Bookings and select 'Modify'. For changes that require assistance, contact support at /contact."
+      data-fr-answer="Pour modifier votre réservation, allez dans Mes Réservations et choisissez 'Modifier'. Pour une aide supplémentaire, rendez-vous sur /contact.">
+    </div>
+
+    <div class="faq-item" data-id="faq2" data-en-question="What are the baggage rules?"
+      data-fr-question="Quelles sont les règles de bagages ?"
+      data-en-answer="Baggage allowance depends on the fare. Check our baggage page: /baggage for details."
+      data-fr-answer="La franchise bagage dépend du tarif. Consultez la page bagages : /baggage pour les détails.">
+    </div>
+
+    <div class="faq-item" data-id="faq3" data-en-question="How do I get a refund?"
+      data-fr-question="Comment obtenir un remboursement ?"
+      data-en-answer="Refunds are processed according to the fare rules. Start a refund request on /refunds or contact support."
+      data-fr-answer="Les remboursements suivent les règles tarifaires. Lancez une demande sur /refunds ou contactez le support.">
+    </div>
+  </section>
+
+  <!-- Chat bubble UI -->
+  <div id="chatbot-root" aria-live="polite">
+    <button id="chat-toggle" aria-expanded="false" title="Open chat">Chat</button>
+
+    <aside id="chat-window" role="dialog" aria-hidden="true">
+      <header id="chat-header">
+        <strong id="chat-title">Travel Assistant</strong>
+        <div id="lang-controls">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button id="chat-close" aria-label="Close chat">✕</button>
+      </header>
+
+      <main id="chat-body">
+        <div id="messages"></div>
+      </main>
+
+      <footer id="chat-footer">
+        <input type="text" id="chat-input" placeholder="Ask in English or French" />
+        <button id="send-btn">Send</button>
+      </footer>
+    </aside>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

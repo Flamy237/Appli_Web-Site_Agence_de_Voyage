@@ -1,0 +1,54 @@
+<!-- Modal pour choisir le type de billet -->
+<div id="modal-billet" class="modal-billet-overlay" style="display:none;">
+  <div class="modal-billet-content">
+    <span class="modal-billet-close" id="close-modal-billet">&times;</span>
+    <h2>Choisissez le type de billet</h2>
+    <button class="billet-type-btn" data-type="bus">Bus</button>
+    <button class="billet-type-btn" data-type="train">Train</button>
+    <button class="billet-type-btn" data-type="bateau">Bateau</button>
+  </div>
+</div>
+
+<!-- Styles pour la modal -->
+<style>
+.modal-billet-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-billet-content {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+  text-align: center;
+  min-width: 300px;
+}
+.modal-billet-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 2rem;
+  color: #e50914;
+  cursor: pointer;
+}
+.billet-type-btn {
+  margin: 1rem 0.5rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background: #e50914;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.billet-type-btn:hover {
+  background: #ff0000;
+}
+</style>

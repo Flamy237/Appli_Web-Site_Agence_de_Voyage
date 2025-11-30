@@ -1,0 +1,976 @@
+/* Style principal */
+:root {
+    /* Palette Flex Travel */
+
+    --couleur-primaire: #1E293B; /* Bleu fonce/Ardoise pour le fond et le footer */
+    --couleur-action: #06B6D4; /* Cyan/Turquoise pour l'action principale (plus visible) */
+    --couleur-neutre-claire: #F8FAFC; /* Blanc casse pour les fonds de section */
+    --couleur-acccent-1: #EF4444; /* Rouge/Corail pour accent secondaire */
+    --couleur-accent-2: #FACC15; /* Jaune or pour titre/sous-titre */
+    --couleur-neutre-alternative: #E2E8F0; /* Gris clair pour les separateurs */
+
+    /* Variante pour les états interactifs */
+    --couleur-action-survol: #0891B2;
+    --couleur-accent-1-survol: #DC2626;
+    --couleur-primaire-survol: #0F172A;
+
+
+     --couleur-glass-border: rgba(255, 255, 255, 0.3); /* Bordure blanche semi-transparente */
+    --couleur-glass-shadow-light: rgba(255, 255, 255, 0.1); /* Ombre interne claire */
+    --couleur-glass-shadow-dark: rgba(0, 0, 0, 0.3); /* Ombre externe sombre */
+      --couleur-glass-bg: rgba(255, 255, 255, 0.1); /* Fond du verre transparent */
+    --couleur-form-glass-bg: rgba(255, 255, 255, 0.7); /* Fond du formulaire moins transparent */
+
+    /* variante pour le Texte */
+    --texte-principal: #334155; /* Gris fonce pour le corps */
+    --texte-inverse: #F8FAFC; /* Texte clair sur fond sombre */
+
+    /* Espacement */
+    --padding-section: 6rem 0;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========================================= Navigation (Desktop & Global) ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* GLASSMORPHISM OPTIMISÉ */
+    background-color: rgba(226, 232, 240, 0.7); /* Légèrement plus opaque pour une meilleure lisibilité */
+    backdrop-filter: blur(15px); /* Légèrement plus flou */
+    -webkit-backdrop-filter: blur(15px); 
+    border-bottom: 1px solid var(--couleur-glass-border);
+    
+    box-shadow: 0 4px 15px var(--couleur-glass-shadow-dark); 
+    
+    color: var(--texte-principal);
+    z-index: 1000;
+}
+
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 25px; /* Augmenté légèrement le padding horizontal */
+    height: 70px; /* Hauteur fixe pour une meilleure cohérence */
+    min-height: 60px; 
+}
+
+.logo a {
+    text-decoration: none; /* S'assurer que le lien autour du h1 n'a pas d'effets indésirables */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 800; /* Rendre le logo plus impactant */
+    color: var(--couleur-action); 
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    transition: color 0.3s ease;
+}
+
+.logo:hover h1 {
+    color: var(--couleur-accent-2); /* Effet de survol subtil sur le logo */
+}
+
+
+/* CONTENEUR PRINCIPAL DE DROITE (Liens + Auth) */
+.nav-content-right {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Augmenté l'espace entre les liens et les boutons */
+    transition: transform 0.4s ease-in-out; /* Ajout pour la transition mobile */
+}
+
+.links {
+    display: flex;
+    gap: 2.2rem; /* Plus d'espace entre les liens */
+    align-items: center;
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 0.95rem; /* Taille légèrement réduite pour l'harmonie */
+    position: relative; 
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    color: var(--texte-principal); 
+    text-decoration: none; 
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 3px; /* Soulignement plus épais */
+    bottom: -5px; 
+    left: 0;
+    background-color: var(--couleur-accent-2);
+    transition: width 0.3s ease-out;
+}
+
+.links a:hover::after,
+.links a.active::after { /* Ajout d'une classe active pour le lien courant */
+    width: 100%; 
+}
+
+.links a:hover {
+    color: var(--couleur-accent-2); 
+}
+
+
+/* Icône pour mobile */
+.menu-icon {
+    display: none;
+    font-size: 2rem; /* Légèrement plus grand */
+    color: var(--couleur-action); 
+    cursor: pointer;
+    z-index: 1001; 
+}
+
+
+/* ========================================= Styles Authentification ========================================= */
+
+.user-status {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Plus d'espace entre le profil et le bouton de déconnexion */
+}
+
+/* Boutons de connexion/inscription (Auth-actions) */
+.auth-actions {
+    display: flex;
+    gap: 15px; /* Plus d'espace entre les boutons */
+    align-items: center;
+}
+
+.auth-btn {
+    text-decoration: none;
+    padding: 10px 20px; /* Padding ajusté */
+    border-radius: 50px; 
+    font-size: 1rem; /* Taille standard */
+    font-weight: 600;
+    transition: all 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap; /* Empêche le texte du bouton de se couper */
+}
+
+/* Connexion (Secondaire) */
+.login-btn {
+    background-color: transparent;
+    color: var(--couleur-action); 
+    border: 2px solid var(--couleur-action);
+}
+
+.login-btn:hover {
+    background-color: var(--couleur-action);
+    color: var(--texte-inverse);
+    box-shadow: 0 6px 15px rgba(30, 144, 255, 0.3);
+    transform: translateY(-2px); /* Léger soulèvement au survol */
+}
+
+/* Inscription (Primaire) */
+.register-btn {
+    background-color: var(--couleur-action); 
+    color: var(--texte-inverse);
+    border: 2px solid var(--couleur-action);
+    box-shadow: 0 6px 15px rgba(30, 144, 255, 0.5);
+}
+
+.register-btn:hover {
+    background-color: var(--couleur-action-survol);
+    border-color: var(--couleur-action-survol);
+    transform: translateY(-2px);
+}
+
+/* Profil utilisateur */
+.user-profile-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--texte-principal);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.user-profile-link:hover {
+    color: var(--couleur-action);
+}
+
+.user-avatar {
+    width: 35px; /* Avatar légèrement plus grand */
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--couleur-action);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.logout-btn {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: #cc0000;
+}
+
+
+/* ========================================= Responsive Mobile (Final) ========================================= */
+
+@media (max-width: 950px) {
+    
+    /* ---------------------------------------------------- */
+    /* Menu Latéral (Le conteneur entier de droite) */
+    /* ---------------------------------------------------- */
+    .nav-content-right {
+        flex-direction: column;
+        align-items: flex-start; 
+        
+        position: fixed; 
+        top: 0;
+        right: 0; 
+        
+        width: 100%; 
+        max-width: 320px; 
+        
+        /* Utilisation de 100vh pour maximiser la hauteur visible */
+        height: 100vh; 
+        overflow-y: auto; 
+
+        /* FIX MAJEUR: Fond uniforme bleu nuit pour tout le panneau */
+        /* (Remplace toute tentative de glassmorphism sur mobile) */
+        background-color: #1a237e; /* Le fond bleu nuit uniforme */
+        backdrop-filter: none; 
+        -webkit-backdrop-filter: none;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5); 
+        z-index: 1001; 
+        
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out; 
+        
+        /* PADDING CORRIGÉ: Espace sous la navbar fixe */
+        padding: 85px 25px 25px 25px; 
+        gap: 0; 
+    }
+
+    /* Le reste du code ci-dessous force la couleur du texte sur le fond sombre */
+
+    /* ---------------------------------------------------- */
+    /* Style des liens dans le menu latéral */
+    /* ---------------------------------------------------- */
+    .links {
+        flex-direction: column;
+        width: 100%;
+        /* Bordure claire sur fond sombre */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        gap: 0; 
+    }
+    
+    .links a {
+        padding: 14px 0; 
+        width: 100%;
+        text-align: left; 
+        font-size: 1.1rem; 
+        font-weight: 600;
+        /* FIX: Assurer que la couleur du texte est BLANCHE ou CLAIRE */
+        color: white; 
+    }
+
+    .links a:hover {
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-radius: 4px;
+        /* Conserver une couleur de survol pour l'accessibilité */
+        color: var(--couleur-action, lightblue); 
+    }
+    
+    /* ---------------------------------------------------- */
+    /* Conteneur du statut utilisateur (Connexion/Profil) */
+    /* ---------------------------------------------------- */
+    .user-status {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+        /* IMPORTANT: S'assurer qu'aucun background blanc n'est hérité ici */
+        background-color: transparent; 
+    }
+    
+    /* Boutons Connexion/Inscription dans le menu latéral */
+    .auth-actions {
+        /* IMPORTANT: S'assurer qu'aucun background blanc n'est hérité ici */
+        background-color: transparent; 
+        /* ... autres styles ... */
+    }
+    
+    .auth-actions .auth-btn {
+        width: 100%; 
+        justify-content: center;
+        margin: 0; 
+    }
+
+    /* Styles des boutons AUTH sur fond sombre */
+    .login-btn {
+        color: white; /* Texte blanc */
+        border-color: white; /* Bordure blanche pour le bouton secondaire */
+    }
+    .login-btn:hover {
+        background-color: white;
+        color: #1a237e; /* Texte sombre au survol */
+    }
+    .register-btn {
+        background-color: var(--couleur-accent-2, lightblue); /* Couleur d'action vive */
+        color: #1a237e; /* Texte sombre sur le bouton primaire */
+        border-color: var(--couleur-accent-2, lightblue);
+    }
+    
+    /* Profil utilisateur et Déconnexion */
+    .user-profile-link {
+        color: white;
+    }
+    .logout-btn {
+        color: #ff8a80; /* Rouge clair sur fond sombre */
+    }
+    
+    /* Le reste des règles (nav-container, menu-icon, etc.) reste inchangé */
+}
+
+/**********************************************************************************************************************
+================================================ Style de avion-page (Refonte complète)  ====================================
+**********************************************************************************************************************/
+
+
+/* ========================================= Conteneur Principal ========================================= */
+
+.bus-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--couleur-glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--couleur-glass-border); 
+    box-shadow: 0 4px 30px var(--couleur-shadow-dark);
+    color: var(--texte-inverse);
+    z-index: 1000;
+}
+.bus-nav .bus-logo h1 {
+    font-size: 1.8rem; 
+    font-weight: 700;
+    color: var(--couleur-action);
+}
+
+.air-main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw 0 5vw;
+}
+
+.air-gauche {
+    width: 50%;
+    padding-right: 30px;
+}
+
+/* ========================================= Section Contenu ========================================= */
+.air-content {
+    color: var(--texte-inverse);
+}
+
+.air-content h1 {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.air-content h1 span {
+    color: var(--couleur-accent-2);
+}
+
+/* ========================================= Formulaire (Glassmorphism) ========================================= */
+#air-bookingform {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* ESPACEMENT VERTICAL */
+    padding: 30px;
+    background: var(--couleur-form-glass-bg); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--couleur-glass-border);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--couleur-shadow-dark);
+}
+
+.air-triptype {
+    display: flex;
+    gap: 30px; /* ESPACEMENT HORIZONTAL */
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--texte-principal);
+    margin-bottom: 5px;
+}
+.air-triptype label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.air-input-line {
+    display: flex;
+    gap: 25px; /* ESPACEMENT ENTRE LES CHAMPS DE LA MEME LIGNE */
+    width: 100%;
+}
+
+.air-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.air-form-group label {
+    font-weight: 600;
+    color: var(--texte-principal);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+#air-depart, #air-arrive, #air-dateD, #air-dateR, #air-passengers, #air-class {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: var(--couleur-neutre-claire); 
+    color: var(--texte-principal);
+}
+
+#air-dateD, #air-dateR, #air-passengers, #air-class{
+    width: 91%;
+}
+
+#air-depart:focus, #air-arrive:focus, #air-dateD:focus, #air-dateR:focus, #air-passengers:focus, #air-class:focus {
+    border: 2px solid var(--couleur-action);
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.5);
+}
+
+.air-buy-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--couleur-action);
+    color: var(--texte-inverse);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.air-buy-btn:hover {
+    background-color: var(--couleur-action-survol);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================= Slider ========================================= */
+.air-slider {
+    margin-top: 40px;
+}
+
+.air-slider-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.air-slider-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--texte-inverse);
+}
+
+.air-slider-button { display: flex; gap: 10px; }
+.air-slider-btn {
+    border: 2px solid var(--couleur-action); background: transparent; width: 35px; height: 35px;
+    color: var(--couleur-action); display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; cursor: pointer; border-radius: 50%; transition: 0.3s;
+}
+.air-slider-btn:hover { background-color: var(--couleur-action); color: var(--texte-inverse); border-color: var(--couleur-action-survol); }
+
+.air-slider-container { position: relative; overflow: hidden; width: 100%; display: flex; align-items: center; }
+.air-slider-image { display: flex; transition: transform 0.3s ease; gap: 20px; cursor: pointer; }
+
+.air-slide {
+    position: relative; min-width: 180px; height: 120px; overflow: hidden;
+    border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.air-slide img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+
+.air-info {
+    width: 100%; position: absolute; bottom: 0; padding: 10px; color: white;
+    font-weight: bold; display: flex; flex-direction: column; justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); transform: translateY(100%); 
+    opacity: 0; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.air-slide:hover .air-info { transform: translateY(0); opacity: 1; }
+.air-sub-location { font-size: 0.8em; }
+.air-location { font-size: 1em; font-weight: 800; margin-bottom: 5px; }
+.air-price { display: flex; align-items: center; font-size: 0.9em; }
+.air-slide-icon { margin-right: 4px; color: var(--couleur-accent-2); }
+
+
+/* ========================================= Animation de l'Avion (Conservée) ========================================= */
+.air-droite {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+#air-flying-plane {
+    width: 90%;
+    max-width: 600px;
+    animation: fly-loop 15s linear infinite;
+    transform-origin: center;
+    position: relative;
+}
+@keyframes fly-loop {
+    0% { transform: translate(-100px, 0px) rotate(15deg) scale(0.8); opacity: 0.3; }
+    50% { transform: translate(0px, -50px) rotate(5deg) scale(1); opacity: 1; }
+    100% { transform: translate(100px, 0px) rotate(15deg) scale(0.8); opacity: 0.3; }
+}
+
+/* ========================================= Responsive Design (Ajustement d'Espacement) ========================================= */
+
+@media(max-width : 1024px) {
+    .air-main-container { flex-direction: column; padding: 20px; }
+    .air-gauche { width: 100%; padding-right: 0; }
+    .air-droite { order: -1; width: 100%; height: 300px; margin-bottom: 30px; }
+    .air-content h1 { font-size: 3rem; text-align: center; }
+    
+    /* Deux champs par ligne sur tablette */
+    .air-input-line {
+        flex-direction: row; 
+        gap: 20px;
+    }
+    .air-form-group {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media(max-width : 768px) {
+    .air-content h1 { font-size: 2.5rem; }
+    
+    /* Un seul champ par ligne sur mobile */
+    #air-bookingform {
+        gap: 20px; 
+    }
+    .air-input-line {
+        flex-direction: column;
+        gap: 15px; /* ESPACEMENT INTERNE ADAPTE */
+    }
+    .air-droite { height: 200px; }
+
+    /* Animation mobile */
+    #air-flying-plane {
+        animation: fly-loop-mobile 15s linear infinite;
+        width: 70%;
+    }
+    @keyframes fly-loop-mobile {
+        0% { transform: translate(-50px, 0px) rotate(5deg) scale(0.7); }
+        50% { transform: translate(0px, -20px) rotate(0deg) scale(0.8); }
+        100% { transform: translate(50px, 0px) rotate(5deg) scale(0.7); }
+    }
+}
+
+/**********************************************************************************************************************
+================================================ Style de bus-page (Refonte complete)  ====================================
+**********************************************************************************************************************/
+
+/* ========================================= Section Heros et Contenu ========================================= */
+.bus-left-section {
+    margin-top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5vh;
+}
+.bus-gauche {
+    width: 50%;
+    text-align: center;
+}
+.bus-content {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--texte-inverse);
+}
+.bus-content h1 {
+    font-weight: 900;
+    font-size: 4rem; 
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.bus-content h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.bus-content h2 span {
+    color: var(--couleur-accent-2);
+}
+.bus-content p {
+    margin: 10px 0 30px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* ========================================= Formulaire (Carte Glassmorphism) ========================================= */
+.bus-trio {
+    display: block; 
+    width: 100%;
+    height: auto;
+    padding-bottom: 10vh;
+}
+
+.bus-form-p {
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%; 
+    margin: 40px auto; 
+    max-width: 800px; 
+    
+    background: var(--couleur-form-glass-bg); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--couleur-glass-border);
+    box-shadow: 0 10px 30px var(--couleur-shadow-dark);
+}
+
+.bus-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.bus-form-group {
+    flex: 1 1 calc(33.333% - 14px); 
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-form-group label {
+    font-weight: 600;
+    color: var(--texte-principal);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.bus-form-group input, .bus-form-group [list] {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    background-color: var(--couleur-neutre-claire); 
+}
+input:focus {
+    border: 2px solid var(--couleur-action);
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.5);
+    outline: none;
+}
+.bus-form-button {
+    margin-top: 20px;
+    width: 100%;
+}
+.bus-buy-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--couleur-action);
+    color: var(--texte-inverse);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.bus-buy-btn:hover {
+    background-color: var(--couleur-action-survol);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================= Animation du Bus ========================================= */
+
+.bus-city {
+    margin-bottom: 5vh;
+    height: 20vh;
+    width: 500%;
+    background-image: url(/projet-agence-de-voyage/public/img/route-2.png);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: bus-city 20s linear infinite;
+}
+@keyframes bus-city {
+    100% { transform: translateX(-1400px); }
+}
+.bus-ensemble {
+    position: absolute;
+    left: 50%;
+    bottom: 9.5vh;
+    transform: translateX(0%);
+    animation: moveCar 25s linear infinite;
+    z-index: 2;
+}
+.bus-car {
+    width: 300px;
+    /* animation: moveCar 20s linear infinite; */
+
+}
+
+@keyframes moveCar{
+    100%{ transform: translateX(-600%); }
+    0%{ transform: translateX(calc(100vh + 1000px)); }
+}
+
+.bus-car img {
+    width: 100%;
+    animation: bus-car-vibration 1s linear infinite;
+}
+@keyframes bus-car-vibration {
+    100% { transform: translateY(-1px); }
+    50% { transform: translateY(1px); }
+    0% { transform: translateY(-1px); }
+}
+.bus-roue {
+    left: 37%;
+    bottom: 36px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    /* animation: moveCar 20s linear infinite; */
+
+}
+.bus-roue img {
+    width: 20px;
+    height: 20px;
+    animation: bus-roue-rotation 1s linear infinite;
+}
+@keyframes bus-roue-rotation {
+    100% { transform: rotate(-360deg); }
+}
+.bus-roue-arriere { left: -130px; }
+.bus-roue-avant { left: 80px; position: absolute; }
+
+.bus-display{
+    margin-bottom: -100vh;
+}
+
+.bus-roadBit {
+    position: absolute;
+    bottom: 3.8rem;
+    left: 10px;
+    width: 100%;
+    height: 43px;
+    background: #4e4e4e;
+}
+.bus-roadnich {
+    position: absolute;
+    bottom: 6.5rem;
+    left: -7px;
+    width: 110%;
+    height: 100px;
+    background: #4e4e4e;
+}
+.bus-road {
+    position: absolute;
+    right: 10px;
+    bottom: 3.9rem;
+    width: 200%;
+    height: 50px;
+    background: #4e4e4e;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    transform: perspective(300px) rotateX(30deg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 111;
+
+}
+.bus-road::before {
+    content: "";
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #fff 0%, #fff 70%, #525252 70%, #525252 100%);
+    background-size: 150px;
+    animation: bus-crossroad 0.4s linear infinite;
+}
+@keyframes bus-crossroad {
+    100% { background-position: -150px; }
+}
+
+/* ========================================= Responsive Design ========================================= */
+@media screen and (max-width: 1024px) {
+    .bus-nav { height: auto; padding: 10px 0; flex-wrap: wrap; }
+    .bus-nav .bus-links { margin: 10px 0; }
+    .bus-nav .bus-button { width: 100%; justify-content: center; margin-top: 10px; }
+    
+    .bus-gauche { width: 100%; }
+    .bus-content h1 { font-size: 3rem; }
+    .bus-content h2 { font-size: 2.5rem; }
+    .bus-content p { font-size: 1.5rem; }
+    .bus-form-p { width: 90%; margin: 20px auto; }
+    
+    /* Deux champs par ligne */
+    .bus-form-group { flex: 1 1 calc(50% - 10px); }
+    
+    .bus-car { width: 250px; }
+    .bus-roue img { width: 18px; height: 18px; }
+}
+
+@media screen and (max-width: 768px) {
+    .bus-menu-icon { display: block; position: absolute; right: 20px; top: 30px; z-index: 1001; }
+    .bus-nav { justify-content: space-between; padding: 15px 20px; height: auto; }
+    .bus-nav .bus-button { display: none; } 
+    
+    .bus-nav .bus-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(30, 41, 59, 0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+    .bus-nav .bus-links.active {
+        display: flex;
+        padding: 20px 0;
+    }
+    .bus-nav .bus-links .bus-link { margin: 10px 0; }
+    .bus-nav .bus-links .bus-link a { font-size: 1.2rem; }
+
+    .bus-content h1 { font-size: 2.5rem; }
+    .bus-content h2 { font-size: 2rem; }
+
+    /* Un seul champ par ligne */
+    .bus-form-group { flex: 1 1 100%; } 
+    
+    .bus-car { width: 150px; }
+    .bus-roue img { width: 12px; height: 12px; }
+}
+
+@media screen and (max-width: 480px) {
+    .bus-content h1 { font-size: 2rem; }
+    .bus-content h2 { font-size: 1.5rem; }
+    .bus-content p { font-size: 1.2rem; }
+
+    .bus-form-p { padding: 15px; }
+    .bus-buy-btn { font-size: 1rem; padding: 12px; }
+
+    .bus-car { width: 100px; }
+    .bus-roue img { width: 10px; height: 10px; }
+    .bus-ensemble { bottom: 20px; }
+}
+
+/* --------------------------------------------------
+   Refined badges for admin header (table / DB)
+   - pill look, subtle gradient, icon, label/value layout
+   - hover, transitions and responsive tweaks
+   -------------------------------------------------- */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));
+    color: #e6eef6;
+    font-size: 13px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.28);
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.badge i.fas {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.95);
+    font-size: 14px;
+}
+
+.badge__meta { display: inline-flex; flex-direction: column; line-height: 1; }
+.badge__label { font-size: 10px; text-transform: uppercase; opacity: 0.85; color: rgba(230,238,246,0.9); }
+.badge__value { font-size: 13px; font-weight: 700; margin-top: 2px; }
+
+.badge:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(2,6,23,0.34);
+}
+
+/* variants */
+.badge--table { background: linear-gradient(90deg, rgba(99,102,241,0.14), rgba(124,58,237,0.06)); }
+.badge--db { background: linear-gradient(90deg, rgba(6,182,212,0.12), rgba(14,165,233,0.04)); }
+
+/* Light theme adjustments */
+html[data-theme="light"] .badge {
+    background: linear-gradient(90deg, rgba(15,23,42,0.04), rgba(15,23,42,0.02));
+    color: #0f172a;
+    border: 1px solid rgba(15,23,42,0.06);
+    box-shadow: none;
+}
+html[data-theme="light"] .badge i.fas { color: #0f172a; }
+html[data-theme="light"] .badge__label { color: rgba(15,23,42,0.7); }
+
+@media (max-width: 880px) {
+    .badge { padding: 6px 8px; gap: 8px; }
+    .badge i.fas { width: 18px; height: 18px; font-size: 12px; }
+    .badge__label { font-size: 9px; }
+    .badge__value { font-size: 12px; }
+}
