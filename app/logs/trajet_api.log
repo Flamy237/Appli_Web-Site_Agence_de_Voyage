@@ -1,0 +1,269 @@
+[2025-11-22 12:38:05] arrivée request: {"depart":"YAOUNDE","type":"Train"}
+[2025-11-22 12:38:05] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-22 12:41:08] arrivée request: {"depart":"YAOUNDE","type":"Train"}
+[2025-11-22 12:41:08] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-22 12:41:19] arrivée request: {"depart":"DOUALA","type":"Train"}
+[2025-11-22 12:41:19] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-22 12:43:11] debug request: {"depart":"YAOUNDE","type":"Train"} -> 1 rows
+[2025-11-22 12:45:37] arrivée request: {"depart":"YAOUNDE","type":"Train"}
+[2025-11-22 12:45:37] arrivée empty -> fallback no-date for depart=YAOUNDE
+[2025-11-22 12:45:37] arrivée response: {"success":true,"arrivals":["DOUALA"]}
+[2025-11-22 12:45:41] dates request: {"depart":"YAOUNDE","arrivee":"DOUALA","type":"Train"}
+[2025-11-22 12:45:41] dates empty -> fallback no-date for YAOUNDE->DOUALA
+[2025-11-22 12:45:41] dates response: {"success":true,"dates":["2025-10-22"],"heures":["08:00:00"]}
+[2025-11-22 12:45:41] companies request: {"depart":"YAOUNDE","arrivee":"DOUALA","type":"Train"}
+[2025-11-22 12:45:41] companies empty -> fallback no-date for YAOUNDE->DOUALA
+[2025-11-22 12:45:41] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 12:45:54] arrivée request: {"depart":"DOUALA","type":"Train"}
+[2025-11-22 12:45:54] arrivée empty -> fallback no-date for depart=DOUALA
+[2025-11-22 12:45:54] arrivée response: {"success":true,"arrivals":["YAOUNDE"]}
+[2025-11-22 12:45:57] dates request: {"depart":"DOUALA","arrivee":"YAOUNDE","type":"Train"}
+[2025-11-22 12:45:57] companies request: {"depart":"DOUALA","arrivee":"YAOUNDE","type":"Train"}
+[2025-11-22 12:45:57] companies empty -> fallback no-date for DOUALA->YAOUNDE
+[2025-11-22 12:45:57] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 12:45:57] dates empty -> fallback no-date for DOUALA->YAOUNDE
+[2025-11-22 12:45:57] dates response: {"success":true,"dates":["2025-10-21"],"heures":["08:00:00"]}
+[2025-11-22 13:02:01] arrivée request: {"depart":"DOUALA","type":"Train"}
+[2025-11-22 13:02:01] arrivée empty -> fallback no-date for depart=DOUALA
+[2025-11-22 13:02:01] arrivée response: {"success":true,"arrivals":["YAOUNDE"]}
+[2025-11-22 13:05:29] debug request: {"depart":"YAOUNDE","type":"Train"} -> 1 rows
+[2025-11-22 13:05:30] debug request: {"depart":"YAOUNDE","type":"Train"} -> 1 rows
+[2025-11-22 13:05:46] debug request: {"depart":"YAOUNDE","type":"Train"} -> 1 rows
+[2025-11-22 13:14:31] arrivée request: {"depart":"DOUALA","type":"Train"}
+[2025-11-22 13:14:31] arrivée response: {"success":true,"arrivals":["YAOUNDE"]}
+[2025-11-22 13:14:34] dates request: {"depart":"DOUALA","arrivee":"YAOUNDE","type":"Train"}
+[2025-11-22 13:14:34] companies request: {"depart":"DOUALA","arrivee":"YAOUNDE","type":"Train"}
+[2025-11-22 13:14:34] dates response: {"success":true,"dates":["2025-10-21"],"heures":["08:00:00"]}
+[2025-11-22 13:14:34] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 13:34:00] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-22 13:34:00] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-22 13:34:02] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 13:34:02] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 13:34:02] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-22 13:34:02] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 14:31:02] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-22 14:31:02] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-22 14:31:04] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 14:31:04] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 14:31:04] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-22 14:31:04] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 14:42:54] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-22 14:42:54] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-22 14:42:56] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 14:42:56] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 14:42:56] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 14:42:56] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-22 15:26:37] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-22 15:26:37] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-22 15:26:39] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 15:26:39] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-22 15:26:39] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 15:26:39] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-22 15:46:14] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-22 15:46:14] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-22 15:46:17] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 15:46:17] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-22 15:46:17] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-22 15:46:17] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-23 23:28:42] arrivée request: {"depart":"Abu Dhabi","type":"Train"}
+[2025-11-23 23:28:42] arrivée empty -> fallback no-date for depart=Abu Dhabi
+[2025-11-23 23:28:42] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:28:56] arrivée request: {"depart":"Dubai","type":"Train"}
+[2025-11-23 23:28:56] arrivée empty -> fallback no-date for depart=Dubai
+[2025-11-23 23:28:56] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:29:05] arrivée request: {"depart":"Dubai","type":"Train"}
+[2025-11-23 23:29:05] arrivée empty -> fallback no-date for depart=Dubai
+[2025-11-23 23:29:05] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:32:01] arrivée request: {"depart":"Dubai","type":"Train"}
+[2025-11-23 23:32:01] arrivée empty -> fallback no-date for depart=Dubai
+[2025-11-23 23:32:01] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:32:17] arrivée request: {"depart":"Abu Dhabi","type":"Train"}
+[2025-11-23 23:32:17] arrivée empty -> fallback no-date for depart=Abu Dhabi
+[2025-11-23 23:32:17] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:32:24] arrivée request: {"depart":"Dubai","type":"Train"}
+[2025-11-23 23:32:24] arrivée empty -> fallback no-date for depart=Dubai
+[2025-11-23 23:32:24] arrivée response: {"success":true,"arrivals":[]}
+[2025-11-23 23:34:06] arrivée request: {"depart":"Dubai","type":"Bateau"}
+[2025-11-23 23:34:06] arrivée response: {"success":true,"arrivals":["Abu Dhabi","Bahrain"]}
+[2025-11-23 23:34:09] dates request: {"depart":"Dubai","arrivee":"Abu Dhabi","type":"Bateau"}
+[2025-11-23 23:34:09] dates response: {"success":true,"dates":["2025-12-06"],"heures":["08:00:00"]}
+[2025-11-23 23:34:09] companies request: {"depart":"Dubai","arrivee":"Abu Dhabi","type":"Bateau"}
+[2025-11-23 23:34:09] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-23 23:35:18] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-23 23:35:18] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-23 23:35:22] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-23 23:35:22] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-23 23:35:22] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-23 23:35:22] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 00:02:23] arrivée request: {"depart":"Dubai","type":"Bateau"}
+[2025-11-24 00:02:23] arrivée response: {"success":true,"arrivals":["Abu Dhabi","Bahrain"]}
+[2025-11-24 00:09:24] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-24 00:09:24] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-24 00:09:25] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-24 00:09:25] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-24 00:09:26] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-24 00:09:26] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-24 18:35:30] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 18:35:30] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 18:35:32] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 18:35:32] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 18:35:32] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 18:35:32] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 20:01:21] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 20:01:21] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 20:01:23] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 20:01:23] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 20:01:23] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 20:01:23] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 20:43:10] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 20:43:10] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 20:43:11] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 20:43:11] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 20:43:11] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 20:43:11] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 21:02:31] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 21:02:31] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 21:02:33] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:02:33] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:02:33] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 21:02:33] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 21:19:21] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 21:19:21] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 21:19:22] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:19:22] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:19:22] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 21:19:22] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 21:22:07] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 21:22:07] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 21:22:08] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:22:08] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 21:22:08] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:22:08] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 21:39:19] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 21:39:19] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 21:39:21] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:39:21] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 21:39:21] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 21:39:21] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-24 22:10:08] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-24 22:10:08] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-24 22:10:10] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 22:10:10] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-24 22:10:10] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-24 22:10:10] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 09:19:39] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 09:19:39] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 09:19:41] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 09:19:41] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 09:19:41] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 09:19:41] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 10:23:02] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 10:23:02] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 10:23:04] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 10:23:04] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 10:23:04] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 10:23:04] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 19:38:31] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 19:38:31] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 19:38:33] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 19:38:33] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 19:38:33] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 19:38:33] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 19:44:29] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 19:44:29] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 19:44:32] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 19:44:32] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 19:44:32] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 19:44:32] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 20:29:37] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 20:29:37] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 20:29:39] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:29:39] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:29:39] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 20:29:39] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 20:33:07] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 20:33:07] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 20:33:09] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:33:09] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:33:09] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 20:33:09] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 20:34:30] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 20:34:30] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 20:34:31] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:34:31] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 20:34:31] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 20:34:31] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 20:39:36] arrivée request: {"depart":"Dubai","type":"Bateau"}
+[2025-11-26 20:39:36] arrivée response: {"success":true,"arrivals":["Abu Dhabi","Bahrain"]}
+[2025-11-26 20:39:39] dates request: {"depart":"Dubai","arrivee":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 20:39:39] dates response: {"success":true,"dates":["2025-12-06"],"heures":["08:00:00"]}
+[2025-11-26 20:39:39] companies request: {"depart":"Dubai","arrivee":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 20:39:39] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 21:12:47] arrivée request: {"depart":"BUEA","type":"Train"}
+[2025-11-26 21:12:47] arrivée response: {"success":true,"arrivals":["GAROUA"]}
+[2025-11-26 21:12:49] dates request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-26 21:12:49] companies request: {"depart":"BUEA","arrivee":"GAROUA","type":"Train"}
+[2025-11-26 21:12:49] dates response: {"success":true,"dates":["2025-10-22"],"heures":["24:34:34"]}
+[2025-11-26 21:12:49] companies response: {"success":true,"companies":["CAMRAIL Intercity"]}
+[2025-11-26 21:17:04] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-26 21:17:04] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-26 21:17:06] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 21:17:06] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-26 21:17:06] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-26 21:17:06] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-26 22:07:23] arrivée request: {"depart":"Dubai","type":"Bateau"}
+[2025-11-26 22:07:23] arrivée response: {"success":true,"arrivals":["Abu Dhabi","Bahrain"]}
+[2025-11-26 22:07:25] dates request: {"depart":"Dubai","arrivee":"Bahrain","type":"Bateau"}
+[2025-11-26 22:07:25] dates response: {"success":true,"dates":["2025-12-03"],"heures":["08:30:00"]}
+[2025-11-26 22:07:25] companies request: {"depart":"Dubai","arrivee":"Bahrain","type":"Bateau"}
+[2025-11-26 22:07:25] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-27 15:58:03] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-27 15:58:03] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-27 15:58:06] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-27 15:58:06] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-27 15:58:06] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-27 15:58:06] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-27 23:02:22] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-27 23:02:22] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-27 23:02:24] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-27 23:02:24] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-27 23:02:24] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-27 23:02:24] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-28 10:46:35] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-28 10:46:35] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-28 10:46:41] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-28 10:46:41] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-28 10:46:41] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-28 10:46:41] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-29 14:57:40] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-29 14:57:40] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-29 14:57:41] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 14:57:41] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-29 14:57:41] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 14:57:41] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-29 15:09:32] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-29 15:09:32] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-29 15:09:34] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 15:09:34] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-29 15:09:34] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 15:09:34] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-29 20:59:47] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-29 20:59:47] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-29 20:59:48] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 20:59:48] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-29 20:59:48] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 20:59:48] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-29 21:24:40] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-29 21:24:40] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-29 21:24:42] dates request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 21:24:42] dates response: {"success":true,"dates":["2025-11-03"],"heures":["10:00:00"]}
+[2025-11-29 21:24:42] companies request: {"depart":"Abu Dhabi","arrivee":"Doha","type":"Bateau"}
+[2025-11-29 21:24:42] companies response: {"success":true,"companies":["MscCruises"]}
+[2025-11-30 00:42:03] arrivée request: {"depart":"Abu Dhabi","type":"Bateau"}
+[2025-11-30 00:42:03] arrivée response: {"success":true,"arrivals":["Doha"]}
+[2025-11-30 00:42:10] arrivée request: {"depart":"Dubai","type":"Bateau"}
+[2025-11-30 00:42:10] arrivée response: {"success":true,"arrivals":["Abu Dhabi","Bahrain"]}
+[2025-11-30 00:42:12] dates request: {"depart":"Dubai","arrivee":"Bahrain","type":"Bateau"}
+[2025-11-30 00:42:12] dates response: {"success":true,"dates":["2025-12-03"],"heures":["08:30:00"]}
+[2025-11-30 00:42:12] companies request: {"depart":"Dubai","arrivee":"Bahrain","type":"Bateau"}
+[2025-11-30 00:42:12] companies response: {"success":true,"companies":["MscCruises"]}

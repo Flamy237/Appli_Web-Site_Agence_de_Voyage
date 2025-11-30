@@ -1,0 +1,50 @@
+<!-- Header réutilisable -->
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Home | Travel</title> -->
+  <!-- Police d'ecriture -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-papm6HkA+2QwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQwQJQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/Home.css"> -->
+
+        <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo" data-aos="zoom-in" data-aos-duration="2000">
+                <h1>Flex Travel</h1>
+            </a>
+            <div class="links" id="nav-links">
+                <a href="/public/Home.html" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">Accueil</a>
+                <a href="#"  data-aos="fade-down" data-aos-duration="1200"
+                    data-aos-delay="200">Acheter un billet</a>
+                <a href="#destinations" data-aos="fade-down" data-aos-duration="1200"
+                    data-aos-delay="300">Destinations</a>
+                <a href="#about" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400">À Propos</a>
+                <a href="#faq" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">FAQ</a>
+                <a href="contact.html" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="600">Contacts</a>
+            </div>
+            <div class="menu-icon" id="menu-Icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // JS simple pour le menu mobile
+        const menuIcon = document.getElementById('menu-Icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuIcon.querySelector('i').classList.toggle('fa-bars');
+            menuIcon.querySelector('i').classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>
