@@ -1,0 +1,324 @@
+[
+    {
+        "timestamp": "2025-11-27 23:34:23",
+        "question": "b",
+        "response": "Je n'ai pas bien compris votre question. Essayez de demander sur: r\u00e9servations, tarifs, bagages, remboursements, annulation.",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:34:33",
+        "question": "bonjour.",
+        "response": "Je n'ai pas bien compris votre question. Essayez de demander sur: r\u00e9servations, tarifs, bagages, remboursements, annulation.",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:34:47",
+        "question": "reservation",
+        "response": "Je n'ai pas bien compris votre question. Essayez de demander sur: r\u00e9servations, tarifs, bagages, remboursements, annulation.",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:34:57",
+        "question": "tarifs",
+        "response": "Nos tarifs varient selon le trajet et la date. Consultez le moteur de recherche pour les prix exacts.",
+        "source": "database",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:43:17",
+        "question": "donne moi la liste de tout les trajet du mois prochains.",
+        "response": "Nous desservons plus de 500 destinations en France et en Europe. Vous pouvez filtrer par ville, r\u00e9gion, ou a\u00e9roport. Les horaires sont mis \u00e0 jour en temps r\u00e9el.",
+        "source": "pattern",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:43:47",
+        "question": "es ce qu'il y a un voyage partant de douala ?",
+        "response": "Je comprends votre question. Pour plus de d\u00e9tails, vous pouvez consulter notre FAQ, ou contactez notre support qui r\u00e9pondra \u00e0 vos questions sp\u00e9cifiques.",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:47:37",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Je comprends votre question! \ud83d\ude0a Malheureusement, je n'ai pas d'information sp\u00e9cifique \u00e0 ce sujet. Je vous recommande de consulter notre FAQ compl\u00e8te, ou de contacter notre \u00e9quipe support qui r\u00e9pondra \u00e0 toutes vos questions en d\u00e9tail. Merci de votre patience!",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:47:45",
+        "question": "hello",
+        "response": "Salut! \ud83d\ude0a Je comprends votre question! \ud83d\ude0a Malheureusement, je n'ai pas d'information sp\u00e9cifique \u00e0 ce sujet. Je vous recommande de consulter notre FAQ compl\u00e8te, ou de contacter notre \u00e9quipe support qui r\u00e9pondra \u00e0 toutes vos questions en d\u00e9tail. Merci de votre patience!",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:47:58",
+        "question": "trajets",
+        "response": "Nous desservons plus de 500 destinations en France et en Europe. Les horaires sont disponibles pour des mois d'avance. Vous pouvez filtrer par ville, r\u00e9gion, ou a\u00e9roport. Les horaires sont mis \u00e0 jour en temps r\u00e9el. Nous offrons plusieurs d\u00e9parts par jour sur les routes principales.",
+        "source": "pattern",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:50:20",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Je comprends votre question! \ud83d\ude0a Malheureusement, je n'ai pas d'information sp\u00e9cifique \u00e0 ce sujet. Je vous recommande de consulter notre FAQ compl\u00e8te, ou de contacter notre \u00e9quipe support qui r\u00e9pondra \u00e0 toutes vos questions en d\u00e9tail. Merci de votre patience!",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:50:49",
+        "question": "donne moi la liste des trajet du  mois prochaint.",
+        "response": "Nous desservons plus de 500 destinations en France et en Europe. Les horaires sont disponibles pour des mois d'avance. Vous pouvez filtrer par ville, r\u00e9gion, ou a\u00e9roport. Les horaires sont mis \u00e0 jour en temps r\u00e9el. Nous offrons plusieurs d\u00e9parts par jour sur les routes principales.",
+        "source": "pattern",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:51:12",
+        "question": "n",
+        "response": "Je comprends votre question! \ud83d\ude0a Malheureusement, je n'ai pas d'information sp\u00e9cifique \u00e0 ce sujet. Je vous recommande de consulter notre FAQ compl\u00e8te, ou de contacter notre \u00e9quipe support qui r\u00e9pondra \u00e0 toutes vos questions en d\u00e9tail. Merci de votre patience!",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-27 23:56:40",
+        "question": "donne moi la liste des trajet.",
+        "response": "Nous desservons plus de 500 destinations en France et en Europe. Les horaires sont disponibles pour des mois d'avance. Vous pouvez filtrer par ville, r\u00e9gion, ou a\u00e9roport. Les horaires sont mis \u00e0 jour en temps r\u00e9el. Nous offrons plusieurs d\u00e9parts par jour sur les routes principales.",
+        "source": "pattern",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:01:13",
+        "question": "b",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler ou utiliser notre moteur de recherche?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:01:50",
+        "question": "donne moi les moyen de tranport disponible.",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler ou utiliser notre moteur de recherche?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:02:04",
+        "question": "le nom de votre companie ?",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler ou utiliser notre moteur de recherche?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:02:40",
+        "question": "quels sont les prix",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler ou utiliser notre moteur de recherche?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:02:52",
+        "question": "nos compagnies",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler ou utiliser notre moteur de recherche?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:05:49",
+        "question": "j",
+        "response": "I don't understand. Can you rephrase or use our search engine?",
+        "source": "fallback",
+        "lang": "en"
+    },
+    {
+        "timestamp": "2025-11-28 00:15:11",
+        "question": "n",
+        "response": "Je ne comprends pas bien. Pouvez-vous reformuler?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:15:18",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Je ne comprends pas bien. Pouvez-vous reformuler?",
+        "source": "fallback",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:21:31",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:22:35",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 00:55:30",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:16:55",
+        "question": "bonjour",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:18:51",
+        "question": "b",
+        "response": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:21:08",
+        "question": "b",
+        "response": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:22:22",
+        "question": "b",
+        "response": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:22:42",
+        "question": "je veux la liste des trajet du mois prochain.",
+        "response": "Pourriez-vous pr\u00e9ciser la destination ou la r\u00e9gion qui vous int\u00e9resse ? Ainsi, je pourrai vous fournir une liste plus pr\u00e9cise des trajets disponibles pour le mois prochain.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:23:01",
+        "question": "je veux les trajet qui concerne douala.",
+        "response": "Je peux vous aider avec cela. Pourriez-vous pr\u00e9ciser si vous cherchez des vols, des trains, des bus ou d'autres types de trajets concernant Douala ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:23:14",
+        "question": "des train",
+        "response": "Pourriez-vous pr\u00e9ciser votre demande ? Je peux vous aider avec les horaires, les tarifs ou les r\u00e9servations de trains en France ou en Europe.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:23:34",
+        "question": "donne moi les compagnie de train disponible.",
+        "response": "Les principales compagnies de train en France sont la SNCF (TGV, Intercit\u00e9s, TER) et Ouigo. Il y a aussi des op\u00e9rateurs priv\u00e9s comme Italo en Italie et Eurostar pour les trajets internationaux.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:33:28",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:33:51",
+        "question": "je veux la liste des trajet disponible aujourd'hui",
+        "response": "Pourriez-vous me pr\u00e9ciser la ville de d\u00e9part et la destination souhait\u00e9e ? Je pourrai ainsi vous fournir les trajets disponibles aujourd'hui.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:34:09",
+        "question": "ville de depart douala. destination younder.",
+        "response": "Je suis d\u00e9sol\u00e9, mais il semble que vous ayez fait une faute de frappe. Pourriez-vous pr\u00e9ciser la destination souhait\u00e9e, s'il vous pla\u00eet ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:35:46",
+        "question": "d'accord merci",
+        "response": "Je suis ravi de vous aider ! N'h\u00e9sitez pas \u00e0 me poser vos questions sur vos projets de voyage.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:36:00",
+        "question": "comment t'appel tu ?",
+        "response": "Je suis l'assistant de voyage de l'agence. Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:36:11",
+        "question": "qui t'a cree ?",
+        "response": "J'ai \u00e9t\u00e9 cr\u00e9\u00e9 par Mistral AI.",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:36:31",
+        "question": "donne moi le nom de l'agence de voyage.",
+        "response": "Je suis d\u00e9sol\u00e9, mais je ne peux pas fournir cette information. Comment puis-je vous aider avec vos plans de voyage aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:36:43",
+        "question": "ta geul.",
+        "response": "Bonjour ! Je suis l\u00e0 pour vous aider avec vos questions sur les voyages. Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:36:50",
+        "question": "fou le camp",
+        "response": "Je suis d\u00e9sol\u00e9, mais je ne comprends pas ce que vous voulez dire. Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 01:37:03",
+        "question": "hello",
+        "response": "Hello! \ud83d\udc4b Hello! How can I assist you with your travel plans today?",
+        "source": "mistral_ai",
+        "lang": "en"
+    },
+    {
+        "timestamp": "2025-11-28 08:53:04",
+        "question": "bonjoutr",
+        "response": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 09:34:43",
+        "question": "bonjour.",
+        "response": "Bonjour! \ud83d\udc4b Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-28 09:34:57",
+        "question": "qui est christ ?",
+        "response": "Christ est une figure centrale du christianisme, consid\u00e9r\u00e9 comme le fils de Dieu et le messie annonc\u00e9 dans l'Ancien Testament. Il est \u00e9galement connu sous le nom de J\u00e9sus-Christ. Si vous avez des questions sur des voyages li\u00e9s \u00e0 des lieux saints ou des p\u00e8lerinages, je suis l\u00e0 pour vous aider !",
+        "source": "mistral_ai",
+        "lang": "fr"
+    },
+    {
+        "timestamp": "2025-11-29 21:06:05",
+        "question": "bonjour",
+        "response": "Bonjour! \ud83d\udc4b Je ne comprends pas bien. Pouvez-vous reformuler?",
+        "source": "fallback",
+        "lang": "fr"
+    }
+]
